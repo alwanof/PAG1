@@ -1,21 +1,21 @@
 <?php
 // Task1: Define variables
 // Define a string variable
-$name = null;
+$name = 'murad';
 
 // Define a numeric variable
-$age = null;
+$age = 41;
 
 // Define a boolean variable
-$isStudent = null;
+$isStudent = true;
 
 //task2: Define arrays
 // Define a numeric array
-$numbers = null;
+$numbers = [];
 
 // Define an associative array
 
-$person = null;
+$person = [];
 // task3:
 // check if a age is odd or even
 $result = '';

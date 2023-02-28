@@ -4,7 +4,7 @@
      age(integer), 
      and isStudent(boolean).*/
 
-$name = null;
+$name = 'murad';
 
 
 $age = null;
@@ -39,3 +39,4 @@ $oddarr = [];
 and returns the string repeated the number of times specified by the integer.*/
 
 // your code here..
+

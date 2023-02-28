@@ -65,6 +65,6 @@ class VariTest extends TestCase
     public function testRepeatString()
     {
         $this->expectOutputString("HelloHelloHello");
-        repeatString(3, "Hello");
+        echo repeatString(3, "Hello");
     }
 }

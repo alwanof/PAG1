@@ -5,16 +5,16 @@
      and isStudent(boolean).*/
 
 $name = "ahmed"; 
-$age = 23; 
+$age = 50; 
 $isStudent = true; 
 
 /*task2: Create an indexed array named (numbers) and an associative array named (person), 
 each with at least 5 elements.*/
 
-$numbers = [1, 2, 3, 4, 5];
+$numbers = [1, 2, 3, 4, 5,6,7,8,9];
 
 $person = [
-    "name" => "ahmed ",
+    "name" => "ahmed",
     "age" => 23,
     "jop" => "web developer",
     "email" => "dddhcfvg@gmail.com",
@@ -34,8 +34,7 @@ if ($age % 2 == 0) {
     $result = "Your age is odd";
 }
 
-
-echo $result;
+echo $result."<br>";
 
 
 // your code here..
@@ -46,13 +45,13 @@ echo $result;
 foreach ($numbers as $number) {
     
     if ($number % 2 != 0) {
-    
+        
         $oddarr[] = $number;
     }
 }
-
-
-print_r($oddarr);
+foreach($oddarr as $value){
+    echo $value."<br>";
+}
 // your code here..
 
 /* task5:Write a custom function named: 
@@ -72,5 +71,6 @@ function repeatString($num, $str) {
 }
 
 
-echo repeatString(3, "Hello"); 
+echo repeatString(5, " Hello "); 
+
 // your code here..

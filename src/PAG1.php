@@ -1,4 +1,4 @@
-<?ph
+<?php
 /* Task1: Declare and initialize 3 variables of different data types:
      name(string), 
      age(integer), 

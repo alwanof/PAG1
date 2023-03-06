@@ -18,8 +18,12 @@ each with at least 5 elements.*/
 $numbers = [1,2,3,4,5,6,7,8,9,10];
 
 
-$person = ["about"=>["name"=>"Muhanned","work"=>"tailor","live in"=>"Istanbul,Turkey"
-],"hobbies"=>["softwere engenear","football","climbing"]];
+$person = ["name"=>"Muhanned",
+          "work"=>"programming",
+          "age"=>20,
+          "stay"=>"Istanbul,Turkey",
+          "talent"=>"writing",
+          "expeince"=>"null"];
 
 /* task3: Write a conditional statement using if-else to check if age declared in task 1 is odd or even, 
 look (result) variable and assign to it: 
@@ -43,15 +47,16 @@ $oddarr = [];
 for($i = 0;$i < count($numbers);$i++ ){
   $math30= $i % 2;
     if($math30 != 0){
-    $oddaer[]= $i;
+    $oddarr[]= $i;
     }
 }
+print_r($oddarr);
 /* task5:Write a custom function named: 
 (repeatString) that takes 2 arguments, an integer and a string, 
 and returns the string repeated the number of times specified by the integer.*/
 
 // your code here..
-function repeatString($str , $int){
+function repeatString($int, $str){
 
 $zz=0;
 while( $zz != $int){
@@ -59,3 +64,5 @@ while( $zz != $int){
      $zz++;
 }
 }
+
+?>

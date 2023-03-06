@@ -59,5 +59,3 @@ function repeatString($name, $number_of_repeating) {
         echo $name;
     }
 }
-
-repeatString("Nafie", 2);

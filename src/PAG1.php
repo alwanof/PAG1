@@ -64,5 +64,5 @@ while( $zz != $int){
      $zz++;
 }
 }
-
+repeatString(3,"name");
 ?>

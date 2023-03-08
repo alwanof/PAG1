@@ -4,7 +4,7 @@
      age(integer), 
      and isStudent(boolean).*/
 
-$name = "ismail yehia";
+$name = "ismail yehia2";
 echo $name
 
 $age = 21;

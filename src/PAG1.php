@@ -6,16 +6,20 @@
 
 $name = "Abdurrahman";
 
-
+echo $name;
 $age = 25;
-
+echo $age;
 
 $isStudent = 3,5;
+echo $isStudent; 
 
 /*task2: Create an indexed array named (numbers) and an associative array named (person), 
 each with at least 5 elements.*/
 
-$numbers = [1,2,3,4,5,6,7,8,9,10];
+$numbers = array(1,2,3,4,5,6,7,8,9,10);
+
+print_r ($numbers);
+
 
 $person = [
      "prsonel info"=>[
@@ -29,7 +33,7 @@ $person = [
      "work hard",
      ],
      ];
-     print_r ($person);
+     print_r ($person); 
      
      
 
@@ -66,8 +70,7 @@ print_r($oddarr);
 (repeatString) that takes 2 arguments, an integer and a string, 
 and returns the string repeated the number of times specified by the integer.*/
 
-function repeatString($str , $n){
-    
+function repeatString($str , $n){  
  
 }
 echo str_repeat("hasan ", 2 ."<br>" );

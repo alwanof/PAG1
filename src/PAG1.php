@@ -45,21 +45,27 @@ echo $result."<br>";
 
 /* task4: Use some kind of loop to iterate over each element in the indexed array(numbers) created in task 2 , 
 - look (oddarr) : it's new array should contains each odd element.*/
-$oddarr = [];
-foreach($numbers as $oddarr)
-if(($oddarr&1))
-{
-echo $oddarr;
-echo "<br>";
+
+foreach($numbers as $number){
+     
+if($number%2!=0){
+    $oddarr[]= $number;
+}
+}
+foreach($oddarr as $value){
+     echo $value."<br>";
 }
 
 /* task5:Write a custom function named: 
 (repeatString) that takes 2 arguments, an integer and a string, 
 and returns the string repeated the number of times specified by the integer.*/
 
-function repeatString($hobby,$times)
+function repeatString($num,$str)
     {
-      echo str_repeat($hobby,$times) ;
-      
+        $result="";
+        for($i=1;$i<=$num;$i++){
+            $result=$str;
+        }
+        return $result;
     }
-    repeatString("Programming",5);
+    echo repeatString( 5,"programming");

@@ -18,29 +18,30 @@ each with at least 5 elements.*/
 $numbers = [1,2,3,4,5];
 
 
-$person = "name"=>"Mehmet",
+$person = [
+    "name"=>"Mehmet",
     "surname"=>" sahinoglu",
     "BirthDay"=>"2000",
     "Department"=>"Computer Engineering",
-    "E-mail"=>"University1337@gmail.com",;
+    "E-mail"=>"University1337@gmail.com",
+];
 
 /* task3: Write a conditional statement using if-else to check if age declared in task 1 is odd or even, 
 look (result) variable and assign to it: 
 - "Your age is even" in case of even 
 - "Your age is odd" in case of odd.*/
 
-$result = '';
+
+
 if($age % 2==0)
 {
-    echo "Your age is even";
-    echo "<br>";
+    $result= "Your age is even";
 }
 else
 {
-    echo "Your age is odd";
-    echo "<br>";
+    $result= "Your age is odd";
 }
-
+echo $result."<br>";
 
 /* task4: Use some kind of loop to iterate over each element in the indexed array(numbers) created in task 2 , 
 - look (oddarr) : it's new array should contains each odd element.*/

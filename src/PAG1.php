@@ -54,8 +54,8 @@ and returns the string repeated the number of times specified by the integer.*/
 
 // your code here..
 
-function repeatString($name, $number_of_repeating) {
+function repeatString($number_of_repeating, $name) {
     for($i=0; $i<$number_of_repeating; $i++){
-        return $name;
+        echo $name;
     }
 }

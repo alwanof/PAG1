@@ -57,15 +57,9 @@ and returns the string repeated the number of times specified by the integer.*/
 
 // your code here..
 function repeatString($int, $str){
-     $ret="";
-     $zz=0;
-     while( $zz != $int ){
-          $ret .= $str."<br>";
-          $zz++;
-
+    for ($i = 0 ; $i < $int ; $i++){
+        echo $str;
+        echo "</br>";  
+    }
      }
-     return  $ret;
-     }
-     
-     echo repeatString(4 ,'name');
 ?>

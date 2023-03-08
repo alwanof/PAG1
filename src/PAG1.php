@@ -56,6 +56,6 @@ and returns the string repeated the number of times specified by the integer.*/
 
 function repeatString($name, $number_of_repeating) {
     for($i=0; $i<$number_of_repeating; $i++){
-        echo $name;
+        return $name;
     }
 }

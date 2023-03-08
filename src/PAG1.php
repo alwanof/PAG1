@@ -51,10 +51,23 @@ if ($result%2==0) {
 /* task4: Use some kind of loop to iterate over each element in the indexed array(numbers) created in task 2 , 
 - look (oddarr) : it's new array should contains each odd element.*/
 $oddarr = [];
-// your code here..
+$numbers = array(1,2,3,4,5,6,7,8,9,10);
+function math($numbers)
+{
+    return ($numbers & 1);
+}
+$oddarr = array_filter($numbers, "math");
+
+$oddarr = array_values(array_filter($oddarr));
+
+print_r($oddarr);
 
 /* task5:Write a custom function named: 
 (repeatString) that takes 2 arguments, an integer and a string, 
 and returns the string repeated the number of times specified by the integer.*/
 
-// your code here..
+function repeatString($str , $n){
+    
+ 
+}
+echo str_repeat("hasan ", 2 ."<br>" );

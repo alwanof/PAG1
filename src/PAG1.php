@@ -59,7 +59,6 @@ and returns the string repeated the number of times specified by the integer.*/
 function repeatString($int, $str){
     for ($i = 0 ; $i < $int ; $i++){
         echo $str;
-        echo "</br>";  
     }
      }
 ?>

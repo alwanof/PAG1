@@ -17,13 +17,13 @@ each with at least 5 elements.*/
 
 $numbers = [1, 3, 5, 7, 9, 10];
 
-
+//sorry for confusion I thought it was person*s* not person
 $person = [
-	0=> "0 person",
-	1=> "1 person",
-	2=> "2 person",
-	3=> "3 person",
-	4=> "4 person",
+	"name"=> "albaraa",
+	"age"=> 18,
+	"hobby"=> "programming",
+	"major"=> "computer engineering",
+	"university"=> "sabahattin zaim"
 ];
 
 /* task3: Write a conditional statement using if-else to check if age declared in task 1 is odd or even, 

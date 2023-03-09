@@ -42,9 +42,13 @@ echo $result;
 $oddarr = [];
 // your code here..
 
+$<?php
 $numbers = [45,50,39,88,99];
-foreach($numbers as $oddarr) {
-echo "$oddarr\n";
+$oddarr = [];
+foreach ($numbers as $number) {
+  if ($number % 2 != 0) {
+    $oddarr[] = $number;
+  }
 }
 ?>
 
@@ -54,8 +58,12 @@ and returns the string repeated the number of times specified by the integer.*/
 
 // your code here..
 <?php
-function repeatString($num1, $apple) {
-return $num1 * $apple;
+function repeatString($repeat, $theobject) {
+  $result = "";
+  for ($i = 0; $i < $repeat; $i++) {
+    $result .= $theobject;
+  }
+  return $result;
 }
-echo repeatString (3, 8);
+echo repeatString(3, "het programming course ");
 ?>

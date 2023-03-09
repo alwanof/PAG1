@@ -70,7 +70,12 @@ print_r($oddarr);
 (repeatString) that takes 2 arguments, an integer and a string, 
 and returns the string repeated the number of times specified by the integer.*/
 
-function repeatString($str , $n){  
- 
+<?php
+function repeatString($str , $n){ 
+
+return str_repeat($str , $n );
+
 }
-echo str_repeat("hasan ", 2 ."<br>" );
+echo repeatString ("hasan ", 8 ."<br>" );
+
+?>

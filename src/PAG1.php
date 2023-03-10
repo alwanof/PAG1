@@ -72,9 +72,8 @@ and returns the string repeated the number of times specified by the integer.*/
 
 
 function repeatString($str , $n){ 
-
+     
 return str_repeat($str , $n );
-
 }
 echo repeatString ("hasan ", 8 ."<br>" );
 

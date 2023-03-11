@@ -19,32 +19,40 @@ look (result) variable and assign to it:
 - "Your age is even" in case of even 
 - "Your age is odd" in case of odd.*/
 
-$result = $age;
+$result = ' ';
 if ($age % 2 == 0 )
 {
-    echo "your age is even"."<br>";
+    $result "your age is even"."<br>";
 }
 else 
 {
-    echo "your age is odd";
+    $result "your age is odd";
 }
 // your code here..
 
 
 /* task4: Use some kind of loop to iterate over each element in the indexed array(numbers) created in task 2 , 
 - look (oddarr) : it's new array should contains each odd element.*/
-$oddarr = [1, 2, 3, 4, 5, 6, 7 ,8];
-for ($oddarr= 0;  $oddarr <= 10 ; $oddarr++) // worng
+$oddarr = [];
+foreach ( $numbers as $number ) {
 
- if ($oddarr %2 == 1)   
+ if ($number %2 == 1)   
  {
-    echo($oddarr);
+    $oddarr [ ] = $number ;
 }
-echo "<hr> <br>";
+}
 // your code here..
 
 /* task5:Write a custom function named: 
 (repeatString) that takes 2 arguments, an integer and a string, 
 and returns the string repeated the number of times specified by the integer.*/
-echo str_repeat("hello world" ."<br>", 3); 
+function repeatString($integer, $string)
+{
+    $result = '';
+    for($i = 0; $i < $integer; $i++)
+    {
+        $result = $result.$string;
+    }
+    return $result;
+}
 // your code here..

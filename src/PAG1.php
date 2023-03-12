@@ -15,10 +15,16 @@ $isStudent = true;
 /*task2: Create an indexed array named (numbers) and an associative array named (person), 
 each with at least 5 elements.*/
 
-$numbers = [45,50,39,88,99];
+$numbers = [1,2,3,4,5,6,7,8];
 
 
-$person = ["mohammad","adil","najah","sami","wasan"];
+$person = [
+     "name" => "mohammad",
+     "age" => 40,
+     "isstudent" => true,
+     "country" => "turkey",
+     "city" => "izmit"
+     ];
 
 /* task3: Write a conditional statement using if-else to check if age declared in task 1 is odd or even, 
 look (result) variable and assign to it: 
@@ -33,9 +39,7 @@ if ($age % 2==0){
     $result = "Your age is even" ;
 }else{
      $result = "Your age is odd" ;
-echo $result;
 }
-?>
 
 /* task4: Use some kind of loop to iterate over each element in the indexed array(numbers) created in task 2 , 
 - look (oddarr) : it's new array should contains each odd element.*/
@@ -50,7 +54,6 @@ foreach ($numbers as $number) {
     $oddarr[] = $number;
   }
 }
-?>
 
 /* task5:Write a custom function named: 
 (repeatString) that takes 2 arguments, an integer and a string, 
@@ -65,5 +68,3 @@ function repeatString($repeat, $theobject) {
   }
   return $result;
 }
-echo repeatString(3, "het programming course ");
-?>
